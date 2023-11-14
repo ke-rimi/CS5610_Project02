@@ -127,3 +127,63 @@
   #disabled {
     background-color: #3a393c;
   }
+
+  @media only screen and (max-width: 480px) {
+   
+    .board {
+      width: 80vw; 
+      max-width: 480px; 
+      margin: 0 auto; 
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); 
+      gap: 4px; 
+    }
+    .row {
+        width: 75%;
+      }
+      .letter {
+        width: calc((70vw - px) / 6); 
+        height: calc((70vw - 30px) / 6); 
+        font-size: 2vw;
+      }
+    
+      .keyboard {
+        width: 50vw; /* Narrower keyboard */
+        padding: 0;
+        flex-wrap: wrap;
+        margin-top: 20px; /* Adjusted margin-top */
+      }
+      .line1 {
+        flex: 33%;
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        transform: scale(0.8);
+      }
+      .line2 {
+        flex: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px;
+        transform: scale(0.8);
+      }
+      .line3 {
+        flex: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px;
+        transform: scale(0.8);
+      }
+      
+      .key#big {
+      width: calc((50vw - 6 * 2px) / 5); 
+        height: calc((50vw - 11) / 10); 
+        font-size: 2vw;
+        
+      }
+  }
+  
