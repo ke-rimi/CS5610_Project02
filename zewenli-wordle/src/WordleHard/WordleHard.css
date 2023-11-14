@@ -1,0 +1,129 @@
+.App {
+    text-align: center;
+    background-color: #121212;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    color: white;
+  }
+  
+  body {
+    padding: 0%;
+    margin: 0;
+  }
+  
+  nav {
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    border-bottom: 0px solid rgb(7, 6, 6);
+    display: grid;
+    place-items: center;
+  }
+  
+  nav h1 {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 45px;
+  }
+  .game {
+    width: 100vw;
+    height: calc(100vh - 170px);
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction: column;
+  }
+  
+  .board {
+    width: 550px;
+    height: 1600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    flex: 1; /* Adjust to distribute space equally */
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+  }
+  
+  .letter {
+    flex: 1;
+    height: 120%;
+    width: 80%;
+    border: 1px solid grey;
+    margin: 5px;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #correct {
+    background-color: #528d4e;
+  }
+  
+  #almost {
+    background-color: #b49f39;
+  }
+  
+  #error {
+    background-color: #3a393c;
+  }
+  
+  .keyboard {
+    width: 700px; /* Reduced from 700px */
+    height: 200px; /* Reduced from 300px */
+    margin-top: 40px;
+  }
+  
+  
+  .line1 {
+    flex: 33%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .line2 {
+    flex: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+  }
+  .line3 {
+    flex: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+  }
+  
+  .key {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    background-color: grey;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  #big {
+    width: 100px;
+  }
+  #disabled {
+    background-color: #3a393c;
+  }

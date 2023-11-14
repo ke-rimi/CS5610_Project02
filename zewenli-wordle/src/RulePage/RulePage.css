@@ -1,0 +1,67 @@
+/* Base styles */
+.game-step {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: left;
+    font-size: large;
+  }
+  
+  .header {
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .game-step h2, .game-step p {
+    margin: 5px 0;
+    color: black;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center; /* Center-align for smaller screens */
+  }
+  
+  .highlight1 {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .highlight2 {
+    background-color: rgb(87, 199, 87);
+    color: black;
+  }
+  
+  .highlight3 {
+    background-color: gray;
+    color: black;
+  }
+  
+  /* Responsive styling for screens less than or equal to 768px (Tablets) */
+  @media (max-width: 768px) {
+    .game-step {
+      padding: 10px;
+      font-size: medium; /* Slightly smaller font for tablets */
+    }
+    
+    .header, h1 {
+      font-size: larger; /* Larger header font for better readability on tablets */
+    }
+  }
+  
+  /* Responsive styling for screens less than or equal to 480px (Phones) */
+  @media (max-width: 480px) {
+    .game-step {
+      padding: 10px;
+      font-size: small; /* Smaller font for phones */
+    }
+    
+    .header, h1 {
+      font-size: large; /* Adjust header size for phones */
+    }
+  
+    /* Adjust layout for smaller screens */
+   
+  }
+  
